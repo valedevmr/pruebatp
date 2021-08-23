@@ -1,0 +1,119 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.flex{
+    display: flex;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.justify-ar{
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.header{
+    background-color:rgb(0, 103, 151);
+    height: 60px;
+    width: 100%;
+
+}
+.header > h1.titulo-pt{
+    background-color: white;
+    width: 20%;
+    margin-right: 30%;
+    border-radius: 5px;
+    height: 32px;
+    font-size: 1.6rem;
+    line-height: 1.2em;
+    margin-top: 15px;
+    text-align: center;
+    color:rgb(151, 103, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nav{
+    width: 40%;
+}
+.nav > ul{
+    height: 60px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.submenu{
+    z-index: 3;
+    position: absolute;
+    display: block;
+}
+.nav .menuSup > li{
+    display: inline-block;
+    width: 32%;
+    margin: auto;
+
+    text-align: center;
+    font-family: var(--menu-li);
+    transition: .4s linear;
+    color: white;
+}
+.nav .menuSup > li:hover {
+    background-color: white;
+}
+.nav .menuSup > li:hover >a{
+    color: rgb(0, 103, 151);
+}
+.nav .menuSup > li > a{
+    display: block;
+    width: 100%;
+    height: 60px;
+    color: white;
+    line-height: 2.5em;
+    font-size: 1.3rem;
+}
+.nav  .menuSup > li .submenu{
+    background-color:rgba(3, 114, 165, 0.11);
+    z-index: 2;
+    position: absolute;
+    visibility: hidden;
+    transition: .4S linear;
+}
+.submenu li:hover{
+    background-color: white;
+
+}
+.submenu li:hover a {
+    color: rgb(0, 103, 151);
+    background-color: white;
+}
+.submenu li{
+    
+    width: 100%;
+
+    border-bottom: 1px solid white;
+    padding: 10px 0;
+}
+.submenu li a{
+    display: block;
+    width: 180px;
+    color: white;
+
+}
+.nav .menuSup > li:hover .submenu{
+    visibility: visible;
+    background-color:rgb(0, 103, 151);
+    
+}
+.ultimo:hover{
+    border-bottom: 1px solid rgb(0, 103, 151);
+}
+.primero:hover{
+    border-top: 1px solid rgb(0, 103, 151);
+}
